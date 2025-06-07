@@ -5,10 +5,10 @@ To set the global `.gitconfig` to the location of the .gitconfig in this reposit
 
 **MacOS**
 - Remove the `.gitconfig` from the HOME folder
-- Add a symlink to the `.gitconfig` in this repository by running `ln -s ~/path/to/.gitconfig ~/.gitconfig` (don't forget to point to the correct path)
+- Add a symlink to the `.gitconfig` in this repository by running `ln -s ~/path/to/.gitconfig ~/.gitconfig` (**don't forget to point to the correct path**)
 
 **Windows**
-- Run `[Environment]::SetEnvironmentVariable("HOME", "C:\Path\To\Git\dotfiles\Git", "User")` (don't forget to point to the correct path)
+- Run `[Environment]::SetEnvironmentVariable("HOME", "C:\Path\To\Git\dotfiles\Git", "User")` (**don't forget to point to the correct path**)
 
 Fill in your name and e-mail in the `.gitconfig` in the repository file and you should be good to go!
 
