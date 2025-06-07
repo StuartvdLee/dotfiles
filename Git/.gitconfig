@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Stuart
+	email =
+[push]
+	default = current
+	autoSetupRemote = true
+[pull]
+	rebase = false
+[fetch]
+	prune = true
+[core]
+	editor = code
+[init]
+	defaultBranch = main
