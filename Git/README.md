@@ -5,7 +5,7 @@ To set the global `.gitconfig` to the location of the .gitconfig in this reposit
 
 **MacOS**
 - Remove the `.gitconfig` from the HOME folder
-- Add a symlink to the `.gitconfig` in this repository by running `ln -s ~/repositories/dotfiles/git/.gitconfig ~/.gitconfig`
+- Add a symlink to the `.gitconfig` in this repository by running `ln -s ~/path/to/.gitconfig ~/.gitconfig`
 
 **Windows**
 
