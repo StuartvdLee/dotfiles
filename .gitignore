@@ -1,2 +1,5 @@
 # Ignored MacOS files
 .DS_Store
+
+# Ignored Windows files
+.lesshst
