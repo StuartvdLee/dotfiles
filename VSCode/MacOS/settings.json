@@ -17,24 +17,7 @@
         "rgba(238,130,238,0.15)"
     ],
     "workbench.colorTheme": "Default Light Modern",
-    "githubIssues.queries": [
-        {
-            "label": "My Issues",
-            "query": "is:open assignee:${user} repo:${owner}/${repository}",
-            "groupBy": [
-                "milestone"
-            ]
-        },
-        {
-            "label": "Created Issues",
-            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
-        },
-        {
-            "label": "Recent Issues",
-            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
-        }
-    ],
     "playwright.reuseBrowser": true,
     "task.autoDetect": "off",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
 }
