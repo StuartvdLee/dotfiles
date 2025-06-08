@@ -6,7 +6,7 @@
     "terminal.integrated.defaultProfile.osx": "zsh",
     "editor.accessibilitySupport": "off",
     "window.restoreWindows": "none",
-    "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font'",
     "indentRainbow.colors": [
         "rgba(255,0,0,0.15)",
         "rgba(255,165,0,0.15)",
