@@ -20,5 +20,6 @@
     "workbench.colorTheme": "Default Light Modern",
     "playwright.reuseBrowser": true,
     "task.autoDetect": "off",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
 }
