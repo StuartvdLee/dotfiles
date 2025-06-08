@@ -1,7 +1,7 @@
 # Git
 
 ## .gitconfig
-To set the global `.gitconfig` to the location of the .gitconfig in this repository, perform the following steps:
+To set the global `.gitconfig` to the location of the `.gitconfig` in this repository, perform the following steps:
 
 **MacOS**
 - Remove the `.gitconfig` from the HOME folder
