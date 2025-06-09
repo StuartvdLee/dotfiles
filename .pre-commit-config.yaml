@@ -1,0 +1,8 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: save-vs-code-extensions
+        name: Save VS Code extensions
+        entry: VSCode/pre_commit_hook.py
+        language: python
+        stages: [pre-commit]
