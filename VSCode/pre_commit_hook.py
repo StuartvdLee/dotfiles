@@ -38,7 +38,8 @@ def main():
         print("Adding VS Code extensions…")
         subprocess.run(
             ["git", "add", "VSCode/code_extensions"],
-            check=True
+            check=True,
+            shell=shell
         )
     else:
         sys.exit(f"Error: script must be run from {expected_dir} (current directory is {current_working_dir})")
