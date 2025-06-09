@@ -1,7 +1,9 @@
 # VS Code
 
-## settings.json
+## Prerequisites
+- Python 3 has to be installed (for extension management)
 
+## settings.json
 To use the `.settings.json` in this repository, perform the following steps:
 
 ### MacOS
@@ -14,10 +16,24 @@ To use the `.settings.json` in this repository, perform the following steps:
 
 ## Extensions
 
-Extensions are automatically saved through a pre-commit hook. To enable this pre-commit hook, perform the following steps:
+### Saving extensions
+Extensions are automatically saved to `code_extensions` through a pre-commit hook. To enable this pre-commit hook, perform the following steps:
 
-### MacOS
+#### MacOS
 - Make the pre-commit hook executable by running `chmod +x ~/path/to/dotfiles/VSCode/pre_commit_hook.py` (**don't forget to point to the correct path**)
 - Enable the pre-commit hook by running `cp ~/path/to/dotfiles/VSCode/pre_commit_hook.py ~/path/to/dotfiles/.git/hooks/pre-commit` (**don't forget to point to the correct path**)
 
-### Windows
+#### Windows
+- 
+
+Extensions can also be saved manually by running `python3 VSCode/save_vscode_extensions.py`.
+
+### Installation of extensions
+
+To install extensions from `code_extensions`, perform the following steps:
+
+#### MacOS
+- Run `python3 VSCode/install_extensions.py`
+
+#### Windows
+- 
