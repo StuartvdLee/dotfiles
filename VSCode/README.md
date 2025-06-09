@@ -16,16 +16,14 @@ To use the `.settings.json` in this repository, perform the following steps:
 
 ## Extensions
 
-### Saving extensions
-Extensions are automatically saved to `code_extensions` through a pre-commit hook. To enable this pre-commit hook, perform the following steps:
+### Saving extensions through pre-commit
+Extensions are automatically saved to `code_extensions` through [pre-commit](https://pre-commit.com/). Follow the [Quick start](https://pre-commit.com/#quick-start) to install pre-commit.
 
 #### MacOS
 - Make the pre-commit hook executable by running `chmod +x ~/path/to/dotfiles/VSCode/pre_commit_hook.py` (**don't forget to point to the correct path**)
 - Enable the pre-commit hook by running `cp ~/path/to/dotfiles/VSCode/pre_commit_hook.py ~/path/to/dotfiles/.git/hooks/pre-commit` (**don't forget to point to the correct path**)
 
-#### Windows
-- 
-
+### Saving extensions manually
 Extensions can also be saved manually by running the `save_vs_code_extensions.py` script:
 
 #### MacOs

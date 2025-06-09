@@ -1,8 +1,17 @@
-#!/usr/bin/env python3
+#!/usr/bin/env sh
+# ─────────────────────────────────────────────────────────────────
+# Cross-platform launcher stub: python3 if available, else python
+# ─────────────────────────────────────────────────────────────────
+# if command -v python3 >/dev/null 2>&1; then
+#     exec python3 "$0" "$@"
+# else
+#     exec python  "$0" "$@"
+# fi
 
 import os
 import subprocess
 import sys
+import platform
 
 def save_code_extensions():
     """Save the list of installed VSCode extensions to ./VSCode/code_extensions"""
@@ -11,14 +20,21 @@ def save_code_extensions():
         subprocess.run(
             ["code", "--list-extensions"],
             stdout=f,
-            check=True
+            check=True,
+            shell=True
         )
 
 def main():
+    operating_system = platform.system()
     home = os.path.expanduser("~")
-    dotfiles_dir = os.path.join(home, "Repositories/dotfiles")
-    save_dir = os.path.join(dotfiles_dir, "VSCode")
 
+    if operating_system == "Windows":
+        dotfiles_dir = "C:/Git/dotfiles"
+    else:
+        dotfiles_dir = os.path.join(home, "Repositories/dotfiles")
+    
+    save_dir = os.path.join(dotfiles_dir, "VSCode")
+    
     # Compare absolute paths
     current_working_dir = os.path.abspath(os.getcwd())
     expected_dir = os.path.abspath(dotfiles_dir)
