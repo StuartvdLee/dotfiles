@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = Stuart
-	email =
+	name = [NAME GOES HERE]
+	email = [EMAIL GOES HERE]
 [push]
 	default = current
 	autoSetupRemote = true
