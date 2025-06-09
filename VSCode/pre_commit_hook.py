@@ -14,7 +14,7 @@ def save_code_extensions():
 
 def main():
     home = os.path.expanduser("~")
-    dotfiles_dir = os.path.join(home, "Repositories/dotfiles")
+    dotfiles_dir = os.path.join(home, "/Repositories/dotfiles")
     save_dir = os.path.join(dotfiles_dir, "VSCode")
 
     # Compare absolute paths
