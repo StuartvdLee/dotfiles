@@ -26,7 +26,13 @@ Extensions are automatically saved to `code_extensions` through a pre-commit hoo
 #### Windows
 - 
 
-Extensions can also be saved manually by running `python3 VSCode/save_vscode_extensions.py`.
+Extensions can also be saved manually by running the `save_vs_code_extensions.py` script:
+
+#### MacOs
+ - `python3 VSCode/save_vs_code_extensions.py --file-dir ~/path/to/dotfiles/VSCode` (**don't forget to point to the correct path**)
+
+#### Windows
+ - `python .\VSCode\save_vs_code_extensions.py --file-dir C:\path\to\dotfiles\VSCode\` (**don't forget to point to the correct path**)
 
 ### Installation of extensions
 
