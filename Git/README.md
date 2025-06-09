@@ -11,7 +11,7 @@ To set the global `.gitconfig` to the location of the `.gitconfig` in this repos
 - Run `python3 Git/set_gitconfig.py`
 
 ### Windows
-- Run `[Environment]::SetEnvironmentVariable("HOME", "C:\Path\To\Git\dotfiles\Git", "User")` (**don't forget to point to the correct path**)
+- Run `python .\Git\set_gitconfig.py
 
 Fill in your name and e-mail in the `.gitconfig` in the repository file and you should be good to go!
 
