@@ -17,6 +17,8 @@ if operating_system == "Windows":
     HWND_BROADCAST = 0xFFFF
     WM_SETTINGCHANGE = 0x001A
     ctypes.windll.user32.SendMessageW(HWND_BROADCAST, WM_SETTINGCHANGE, 0, "Environment")
+
+    print("Set $Env:HOME to", new_path)	
 else:
     src = Path("~/Repositories/dotfiles/Git/.gitconfig").expanduser()
     dst = Path("~/.gitconfig").expanduser()
