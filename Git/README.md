@@ -1,14 +1,17 @@
 # Git
 
+## Prerequisites
+- Python 3
+
 ## .gitconfig
 To set the global `.gitconfig` to the location of the `.gitconfig` in this repository, perform the following steps:
 
 ### MacOS
 - Remove the `.gitconfig` from the HOME folder
-- Add a symlink to the `.gitconfig` in this repository by running `ln -s ~/path/to/.gitconfig ~/.gitconfig` (**don't forget to point to the correct path**)
+- Run `python3 Git/set_gitconfig.py`
 
 ### Windows
-- Run `[Environment]::SetEnvironmentVariable("HOME", "C:\Path\To\Git\dotfiles\Git", "User")` (**don't forget to point to the correct path**)
+- Run `python .\Git\set_gitconfig.py
 
 Fill in your name and e-mail in the `.gitconfig` in the repository file and you should be good to go!
 
