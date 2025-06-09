@@ -37,3 +37,5 @@ To install extensions from `code_extensions`, perform the following steps:
 
 #### Windows
 - Run `python .\VSCode\install_extensions.py`
+
+test
