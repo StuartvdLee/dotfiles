@@ -10,10 +10,9 @@ def main():
     # Make sure the dotfiles directory exists
     os.makedirs(dotfiles_dir, exist_ok=True)
 
-    # Inform the user
     print("Saving VSCode extensions...")
 
-    # Run the `code --list-extensions` command and write its output
+    # Run the `code --list-extensions` command and write its output to file
     with open(output_file, "w") as f:
         subprocess.run(
             ["code", "--list-extensions"],
