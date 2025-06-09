@@ -1,8 +1,11 @@
+default_language_version:
+    python: python3 
+
 repos:
 -   repo: local
     hooks:
     -   id: save-vs-code-extensions
         name: Save VS Code extensions
-        entry: python VSCode/pre_commit_hook.py
-        language: system
+        entry: VSCode/pre_commit_hook.py
+        language: python
         stages: [pre-commit]

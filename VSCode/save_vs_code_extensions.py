@@ -1,6 +1,7 @@
 import os
 import subprocess
 import argparse
+import platform
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Save installed VSCode extensions to a file")
@@ -12,6 +13,13 @@ def parse_args():
 
 def main():
     args = parse_args()
+
+    operating_system = platform.system()
+
+    if operating_system == "Windows":
+        shell = True
+    else:
+        shell = False
 
     # Determine paths
     vs_code_dir = args.file_dir
@@ -28,7 +36,7 @@ def main():
             ["code", "--list-extensions"],
             stdout=f,
             check=True,
-            shell=True
+            shell=shell
         )        
 
 if __name__ == "__main__":
