@@ -1,18 +1,25 @@
 import os
 import subprocess
 import sys
+import platform
 
 def command_output(cmd):
     """Run a command and return its stdout as a list of stripped lines."""
     try:
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, check=True, text=True)
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, check=True, text=True, shell=True)
         return [line.strip() for line in result.stdout.splitlines() if line.strip()]
     except subprocess.CalledProcessError:
         return []
 
 def main():
+    operating_system = platform.system()
+
+    if operating_system == "Windows":
+        extensions_path = "C:/git/dotfiles/VSCode/code_extensions"
+    else:
+        extensions_path = os.path.expanduser("~/Repositories/dotfiles/VSCode/code_extensions")
+
     # Load saved extensions
-    extensions_path = os.path.expanduser("~/Repositories/dotfiles/VSCode/code_extensions")
     if not os.path.isfile(extensions_path):
         sys.exit(f"No saved extensions file at {extensions_path!r}")
 
@@ -34,7 +41,7 @@ def main():
         for ext in missing_extensions:
             # print(f"Installing {ext}...")
             try:
-                subprocess.run(["code", "--install-extension", ext], check=True)
+                subprocess.run(["code", "--install-extension", ext], check=True, shell=True)
             except subprocess.CalledProcessError:
                 print(f"Failed to install {ext}", file=sys.stderr)
         print("Done!")
