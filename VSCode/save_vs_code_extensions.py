@@ -14,7 +14,6 @@ def main():
     args = parse_args()
 
     # Determine paths
-    home = os.path.expanduser("~")
     vs_code_dir = args.file_dir
     output_file = os.path.join(vs_code_dir, "code_extensions")
 
