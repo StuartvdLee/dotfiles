@@ -13,3 +13,5 @@
 	editor = code
 [init]
 	defaultBranch = main
+[help]
+	autocorrect = prompt
